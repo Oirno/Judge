@@ -1,0 +1,30 @@
+{
+  "name": "oirno",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "npx tsc && pkg -t latest-linux-x64 -o build/oirno dist/main.js",
+    "start": "./build/oirno",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oirno/Judge.git"
+  },
+  "author": "kj415j45",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oirno/Judge/issues"
+  },
+  "homepage": "https://github.com/Oirno/Judge#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "pkg": "^5.8.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "winston": "^3.11.0"
+  }
+}
