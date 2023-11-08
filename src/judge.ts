@@ -111,6 +111,8 @@ function runTestPoint(
       return new TestResult(point, TestStatus.RE, error);
     }
   }
+
+  log.info(`Comparing with ${JSON.stringify(point.method)}`);
   const expected = fs.readFileSync(expectFile, "utf-8");
   const compareResult = point.method.compare(output, expected);
   if (compareResult !== null) {

@@ -7,8 +7,6 @@ export class StringExactComparer extends Comparer {
    * Output must be exactly the same as the expected output.
    */
   compare(output: string, expected: string) {
-    log.info(`Comparing using ExactComparer`);
-
     if (output.length !== expected.length) {
       return "Output length not matched.";
     }
