@@ -21,7 +21,7 @@ export class Runner {
   run(binary: string, input: string): string {
     const command = `${this.getCommand(binary)}`;
     try {
-      log.info(`Run with command: ${command}`);
+      log.verbose(`Run with command: ${command}`);
       return execSync(command, {
         input: input,
         stdio: "pipe",

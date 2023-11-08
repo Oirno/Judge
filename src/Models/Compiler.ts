@@ -14,7 +14,7 @@ export class Compiler {
   compile(source: string, binary: string): boolean {
     const command = this.getCommand(source, binary);
     try {
-      log.info(`Compiling with command: ${command}`);
+      log.warn(`Compiling with command: ${command}`);
       const compileInfo = execSync(command, {
         stdio: "pipe",
       });

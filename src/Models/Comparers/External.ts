@@ -21,7 +21,7 @@ export class ExternalComparer extends Comparer {
     const command = this.template
       .replace("{out}", outputFilePath)
       .replace("{exp}", expectedFilePath);
-    log.info(`Comparing with external command: ${command}`);
+    log.warn(`Comparing with external command: ${command}`);
 
     try {
       const execOutput = execSync(command, {
