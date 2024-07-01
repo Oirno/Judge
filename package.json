@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Oirno/Judge#readme",
   "description": "",
   "devDependencies": {
-    "@types/node": "^20.12.2",
+    "@types/node": "^20.14.9",
     "pkg": "^5.8.1",
     "typescript": "^5.4.3"
   },
